@@ -1,0 +1,12 @@
+{
+  "name": "A11y Annotations (Gemini)",
+  "id": "a11y-annotations-gemini",
+  "api": "1.0.0",
+  "editorType": ["figma", "figjam"],
+  "main": "dist/main.js",
+  "ui": "dist/ui.html",
+  "permissions": ["currentuser"],
+  "relaunchButtons": [
+    { "command": "scan", "name": "Scan Accessibility" }
+  ]
+}
