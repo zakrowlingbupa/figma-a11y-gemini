@@ -1,9 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/gemini.ts", "use": "@vercel/node" }
+    { "src": "figma-a11y-gemini/api/gemini.ts", "use": "@vercel/node" },
+    { "src": "figma-a11y-gemini/api/debug-env.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/gemini", "dest": "/api/gemini.ts" }
+    { "src": "/api/gemini", "dest": "figma-a11y-gemini/api/gemini.ts" },
+    { "src": "/api/debug-env", "dest": "figma-a11y-gemini/api/debug-env.ts" }
   ]
 }
